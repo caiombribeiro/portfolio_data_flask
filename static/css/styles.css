@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "UTF-8";fas
 /*!
 * Start Bootstrap - Freelancer v7.0.7 (https://startbootstrap.com/theme/freelancer)
 * Copyright 2013-2023 Start Bootstrap
@@ -102,7 +102,9 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  
 }
+
 
 hr {
   margin: 1rem 0;
@@ -1334,6 +1336,14 @@ progress {
   }
   .col-lg-12 {
     flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .col-lg-12-types {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
   }
   .offset-lg-0 {
@@ -8087,7 +8097,7 @@ textarea.form-control-lg {
 
 .text-light {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--), var(--bs-text-opacity)) !important;
 }
 
 .text-dark {
@@ -8102,7 +8112,7 @@ textarea.form-control-lg {
 
 .text-white {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--bs-white-rgb,#fff), var(--bs-text-opacity)) !important;
 }
 
 .text-body {
@@ -11007,6 +11017,10 @@ html {
 .masthead .masthead-avatar {
   width: 15rem;
   border-radius: 10px;
+}
+
+.bagdes{
+  margin: 5px;
 }
 
 @media (min-width: 992px) {
