@@ -4640,6 +4640,13 @@ textarea.form-control-lg {
   top: -1px;
 }
 
+.bagdes{
+  margin: 5px;
+  display:flexbox;
+  align-items: center;
+  justify-content: center;
+}
+
 .alert {
   --bs-alert-bg: transparent;
   --bs-alert-padding-x: 1rem;
