@@ -53,3 +53,44 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
+const btnEnviar = document.querySelector('#btn-enviar')
+const btnEnviarLoader = document.querySelector('#btn-enviar-loader')
+
+btnEnviar.addEventListener("click", () => {
+    // Verificar se todos os campos estão preenchidos
+    const inputs = document.querySelectorAll('input[required]');
+    const textareas = document.querySelectorAll('textarea[required]');
+    let todosPreenchidos = true;
+
+    inputs.forEach(input => {
+        if (input.value === '') {
+            todosPreenchidos = false;
+            // Pode adicionar lógica adicional aqui, por exemplo, realçar o campo não preenchido
+        }
+    });
+
+    const emailInput = document.querySelector('#email');
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(emailInput.value)) {
+        todosPreenchidos = false;
+    }
+
+    textareas.forEach(textarea => {
+        if (textarea.value === '') {
+            todosPreenchidos = false;
+            // Pode adicionar lógica adicional aqui, por exemplo, realçar o campo não preenchido
+        }
+    });
+
+    // Mudar o botão apenas se todos os campos estiverem preenchidos
+    if (todosPreenchidos) {
+        btnEnviarLoader.style.display = "block";
+        btnEnviar.style.display = "none";
+    }
+});
+
+setTimeout(() => {
+    document.querySelector("#alerta").style.display = "none";
+    }, 5000)
+
