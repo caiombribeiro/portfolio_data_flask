@@ -3893,8 +3893,9 @@ textarea.form-control-lg {
 
 @media (min-width: 576px) {
   .navbar-expand-sm {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   .navbar-expand-sm .navbar-nav {
     flex-direction: row;
@@ -3940,8 +3941,9 @@ textarea.form-control-lg {
 }
 @media (min-width: 768px) {
   .navbar-expand-md {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   .navbar-expand-md .navbar-nav {
     flex-direction: row;
@@ -3987,8 +3989,9 @@ textarea.form-control-lg {
 }
 @media (min-width: 992px) {
   .navbar-expand-lg {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   .navbar-expand-lg .navbar-nav {
     flex-direction: row;
@@ -4034,8 +4037,9 @@ textarea.form-control-lg {
 }
 @media (min-width: 1200px) {
   .navbar-expand-xl {
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
   .navbar-expand-xl .navbar-nav {
     flex-direction: row;
@@ -10954,7 +10958,7 @@ html {
 }
 #mainNav .navbar-brand {
   color: #fff;
-  margin-left: 1rem;
+
 
 }
 #mainNav .navbar-nav {
@@ -10975,7 +10979,7 @@ html {
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.8rem;
-  margin-right: 1rem;
+
 }
 
 @media (min-width: 992px) {

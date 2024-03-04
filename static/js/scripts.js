@@ -1,11 +1,4 @@
-/*!
-* Start Bootstrap - Freelancer v7.0.7 (https://startbootstrap.com/theme/freelancer)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
+
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -93,4 +86,8 @@ btnEnviar.addEventListener("click", () => {
 setTimeout(() => {
     document.querySelector("#alerta").style.display = "none";
     }, 5000)
+
+document.getElementById('alerta').querySelector('.btn-close').addEventListener('click', function () {
+    document.getElementById('alerta').remove();
+});
 
